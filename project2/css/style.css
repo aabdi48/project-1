@@ -132,3 +132,29 @@ img {
 #football-page img {
   border: 0.3rem solid #1d4ed8;
 }
+h1 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 1.5rem;
+}
+
+body {
+  background: #f3f4f6;
+}
+
+nav {
+  background: #ffffff;
+  padding: 1rem 0;
+  border-bottom: 0.1rem solid #e5e7eb;
+}
+
+section {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.4rem 1rem rgba(0,0,0,0.05);
+}
+
+nav ul {
+  justify-content: center;
+}
