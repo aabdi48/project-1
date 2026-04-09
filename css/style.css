@@ -5,55 +5,42 @@ body {
   background: #f4f6f8;
   color: #1f2933;
   line-height: 1.6;
-  padding: 2rem;
+  margin: 0;
+  padding: 1rem;
+  position: relative;
 }
 
 nav {
-  display: flex;
-  justify-content: center;
   margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
 }
 
 nav ul {
   list-style: none;
-  display: flex;
-  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
-  display: inline;
+  display: block;
+  margin: 0.5rem 0;
 }
 
 nav a {
-  text-decoration: none;
-  color: #1f2933;
-  font-weight: 600;
-  font-size: 1.1rem;
-  padding: 0.5rem 1rem;
-}
-
-nav a:hover {
-  color: #2563eb;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav li {
   display: inline-block;
-  margin: 0 1rem;
-}
-
-nav a {
   text-decoration: none;
-  color: #1f2933;
   font-weight: 600;
+  color: #2c3e50;
   font-size: 1.1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
 }
 
 nav a:hover {
   color: #2563eb;
+  background: #e6ebf1;
 }
 
 h1 {
@@ -69,31 +56,30 @@ h2 {
 section {
   margin-bottom: 2rem;
   padding: 1rem;
-  background: white;
+  background: #ffffff;
   border-radius: 0.5rem;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
 }
 
 img {
-  max-width: 60%;
+  max-width: 90%;
+  height: auto;
   display: block;
   margin: 1rem auto;
   border-radius: 0.5rem;
 }
 
-@media (max-width: 768px) {
-  body {
-    padding: 1rem;
-  }
-
-  img {
-    max-width: 90%;
-  }
-
-  nav li {
-    display: block;
-    margin: 0.5rem 0;
-  }
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
 }
+
 #index-page {
   max-width: 70rem;
   margin: 0 auto;
@@ -132,14 +118,20 @@ img {
 #football-page img {
   border: 0.3rem solid #1d4ed8;
 }
-nav a {
-  font-weight: 600;
-  color: #2c3e50;
-  padding: 0.6rem 1rem;
-  border-radius: 0.5rem;
-  transition: background 0.3s;
-}
 
-nav a:hover {
-  background: #e6ebf1;
+@media (min-width: 768px) {
+  body {
+    padding: 2rem;
+  }
+
+  nav li {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+
+  img {
+    max-width: 60%;
+    float: right;
+    margin: 0 0 1rem 1.5rem;
+  }
 }
